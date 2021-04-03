@@ -22,7 +22,7 @@ const substitutionModule = (function () {
 
     const buildEncryption = input.toLowerCase().split('');
 
-    { //encode
+    { //encode or decode here
 		  return buildEncryption.map(letter => {  //iterate through each letter in our input
 		  	for(let plainLetter in encryptionKeys){  //iterate through each object in encryptionKeys
 		  		let substitutionLetter = encryptionKeys[plainLetter]; //set our keyvalue to substitutionLetter
